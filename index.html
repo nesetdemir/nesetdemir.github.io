@@ -1,1 +1,144 @@
-Merhaba Dünya
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>yazılıma giriş 101 - basit rehber - kim korkar yazılımdan!</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/0/normalize.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/prism.css">
+
+	<script src="js/prism.js"></script>
+
+</head>
+<body>
+    <div class="scrollblock block-title">
+        <h1>yazılıma giriş 101 - html - css - php - mysql</h1>
+        <p>yazılım dünyasını merak edip en başından başlamak isteyenlerin rehberi ;)</p>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="nesetdemir" data-size="large" data-url="https://nesetdemir.github.io/" data-related="nesetdemir" data-hashtags="yazılım101">Tweetle</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <p class="meta">
+            yazar: <a href="http://www.twitter.com/nesetdemir">Neşet Demir</a>
+            <br />
+            sorunları lütfen <a href="https://github.com/nesetdemir/nesetdemir.github.io/issues">github</a> üzerinden raporlayınız.
+        </p>
+
+    </div>
+
+    <!-- giris -->
+    <a name="giris"></a>
+    <div class="scrollblock block-giris">
+        <h2>giriş</h2>
+        <p>
+            web geliştiricisi olmak istiyorsan, başlamak için size gerekli olacak herşey bu sayfada bulabilirsin. Bloglar, makaleler ya da kafa karıştırıcı teknik kitaplarla boğulmuş olman muhtemel daha yolun başında bu sayfayı bulduysan ne mutlu sana. Aşağıya doğru sırası ile HTML & CSS , PHP ve MySQL dillerine giriş yapacağız.
+        </p>
+    </div>
+    <!-- giris -->
+    <!-- editor -->
+    <a name="editor"></a>
+    <div class="scrollblock block-editor">
+        <h2>editör</h2>
+        <p>olmazsa olmazımız kodları yazabileceğimiz bir editörümüz olmalı. Yeni nesil editör Atom'u indirip kuruyoruz. </p>
+        <img src="img/atom-editor.png" alt="Atom Editör" />
+        <p>
+            <a href="https://atom.io/">Atom'u İndir</a>
+        </p>
+    </div>
+    <!-- /editor -->
+
+    <a name="html"></a>
+    <div class="scrollblock block-html">
+        <h2>HTML</h2>
+				<p>
+					html iskeletimiz diyebiliriz.<br>
+					html dosyaların uzantıları .html olur. ilk dosyamızın adı sunucuların otomatik tanımasından dolayı genelde <code>index.html</code> olur.
+				</p>
+
+        <p>
+					html taglar <code>&lt;html></code> şeklinde açılır. <code>&lt;/html></code> şeklinde kapanır.
+					<br>
+					html tagları açıldığı sırayla kapanırlar.
+					<br>örneğin önce <code>&lt;html></code> sonra <code>&lt;head></code> tagı açıldıysa önce <code>&lt;/head></code> sonra <code>&lt;/html></code> kapatılır.
+					<br> genel yapı aşağıdaki gibi olur.<br>
+					<pre><code class="language-html">&lt;html>
+		&lt;head> &lt;/head>
+		&lt;body> &lt;/body>
+  &lt;/html></code></pre>
+        </p>
+
+    </div>
+
+		<a name="css"></a>
+    <div class="scrollblock block-css">
+        <h2>css</h2>
+				<p>
+					css bizim makyajımız diyebiliriz.
+					<br>
+					<code>style.css</code>
+				</p>
+
+				<p>
+					<pre><code class="language-css">p { color: red }</code></pre>
+				</p>
+    </div>
+
+    <a name="localhost"></a>
+    <div class="scrollblock block-localhost">
+        <h2>localhost</h2>
+        <p>
+            kendi bilgisayarımızı sunucu gibi çalışmamız için ekstra kurulumlara ihtiyacımız var.<br />
+            <code>http://localhost</code><br />
+        </p>
+    </div>
+    <a name="php"></a>
+    <div class="scrollblock block-php">
+        <h2>php</h2>
+        <p>
+            php dili <code>&lt;?php</code> ile <code>?></code> kodları arasında yazılır.
+        </p>
+				<p>
+					<pre><code class="language-php">&lt;?php echo "Merhaba Dünya"; ?></code></pre>
+        </p>
+    </div>
+    <a name="mysql"></a>
+    <div class="scrollblock block-mysql">
+        <h2>mysql - veritabanı</h2>
+        <p>
+            mysql kısaca bir veri deposu diyebiliriz. veritabanı yönetimi için <code>phpMyAdmin</code> kullanılır.
+        </p>
+				<p>
+					<pre><code class="language-sql">CREATE TABLE ilktablo (
+	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	ad VARCHAR(30) NOT NULL,
+	soyad VARCHAR(30) NOT NULL,
+	eposta VARCHAR(50)
+  )</code></pre>
+        </p>
+    </div>
+
+    <a name="kaynaklar"></a>
+    <div class="scrollblock block-kaynaklar">
+        <h2>linkler & kaynaklar</h2>
+        <h3>yazılımcının el çantası</h3>
+        <p>
+            <ul>
+                <li><a href="http://stackoverflow.com/">stackoverflow (yardımlaşma dünyası)</a></li>
+            </ul>
+        </p>
+        <h3>rehberler</h3>
+        <p>
+            <ul>
+                <li><a href="https://www.codecademy.com/">codecademy</a></li>
+            </ul>
+        </p>
+    </div>
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+</body>
+</html>
